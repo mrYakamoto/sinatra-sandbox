@@ -1,0 +1,15 @@
+<h1>Send a present to the internet</h1>
+<form action="/sandbox" method="POST">
+  <input type="text" name="first_input">
+  <input type="submit">
+</form>
+
+<h2>Or you can stick something at the bottom of the page if you want.</h2>
+<form action="/sandbox" method="GET">
+  <input type="text" name="second_input">
+  <input type="submit">
+</form>
+
+<% if @var %>
+<h1><%= "#{@var}" %></h1>
+<% end %>
